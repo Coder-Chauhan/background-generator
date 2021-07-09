@@ -4,9 +4,9 @@ const colors = document.querySelector("h3");
 const body = document.querySelector("#gradient");
 const copyColor = document.querySelector("#copy-color");
 
-function setGradient() {
+const setGradient = () => {
     body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
-    copyColor.textContent = body.style.background + ";";
+    copyColor.textContent = `${body.style.background} ;`;
 }
 
 color1.addEventListener("input", setGradient);
