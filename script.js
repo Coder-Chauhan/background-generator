@@ -5,7 +5,7 @@ const body = document.querySelector("#gradient");
 const copyColor = document.querySelector("#copy-color");
 
 function setGradient() {
-    body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+    body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
     copyColor.textContent = body.style.background + ";";
 }
 
